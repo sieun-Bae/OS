@@ -46,6 +46,7 @@ int main(void)
 	if (pid == 0)
 	{
 		shmid = shmget((key_t)1234, sizeof(int), 0);
+		'"'
 		if(shmid == -1)
 		{
 			perror("shmget failed: ");
